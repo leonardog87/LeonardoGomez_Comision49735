@@ -1,4 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Grape';
+    src: url('../assets/fonts/Grape_Nuts/GrapeNuts-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Fira';
+    src: url('../assets/fonts/Fira_Sans/FiraSans-Regular.ttf');
+}
+
 h1 {
-    color:blue;
-    font-size: 50px;
+    color:white;
+    font-family: 'Grape';
+    font-weight: bold;
+}
+
+h2 {
+    color:white;
+    font-family: 'Grape';
+    font-weight: bold;
+}
+
+h3 {
+    color:black;
+    font-family: 'Fira';
+    font-weight: bold;
+}
+
+.bg-dark {
+    align-items: center;
+}
+
+.bg-dark-list {    
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3px 50px 5px 50px;
+}
+
+.bg-white {
+    padding: 0 25px 0 0;
+}
+
+.bg-white-list {    
+    color: black;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 75%;
+}
+
+nav {
+    background-color: rgb(223, 217, 217);
+    gap: 75%; 
+}
+
+.nav-item {
+    color: black;
+    padding: 0 100px 0 100px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    gap: 75px;
+    margin: 30px;
+}
+
+.card {
+    border-radius: 25px;
+    width: 500px;
+    height: 170px;  
+}
+
+.nosotros {
+    background-color: rgb(145, 32, 32);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros img {
+    height: 450px;
+    border-radius: 10%;
+    margin: 30px;
+}
+
+.nosotros h2 {
+    color: black;
+    list-style: none;
+    font-size: 70px;
+    font-family: 'Grape';
+    text-align: center;
+    padding-left: 50px;
+}
+
+.nosotros p {
+    color: black;
+    list-style: none;
+    font-size: 35px;
+    font-family: 'Grape';
+    font-weight: bolder;
+    text-align: center; 
+    margin: 30px;
+}
+
+.equipo {
+    background-color: rgb(223, 217, 217);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipo img {
+    height: 450px;
+    border-radius: 10%;
+    margin: 30px;
+}
+
+.equipo h2 {
+    color: black;
+    list-style: none;
+    font-size: 70px;
+    font-family: 'Grape';
+    text-align: center;
+    padding-left: 50px;
+}
+
+.equipo p {
+    color: black;
+    list-style: none;
+    font-size: 35px;
+    font-family: 'Grape';
+    font-weight: bolder;
+    text-align: center; 
+    margin: 30px;
+}
+
+.contact {
+    background-color: rgb(145, 32, 32);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact iframe {
+    height: 400px;
+    width: 100%;
+    margin: 30px;
+}
+
+.contact h2 {
+    color: black;
+    list-style: none;
+    font-size: 70px;
+    font-family: 'Grape';
+    text-align: center;
+    padding-left: 50px;
+}
+
+.contact-list {
+    color: black;
+    list-style: none;
+    font-size: 35px;
+    font-family: 'Grape';
+    font-weight: bolder;
+    text-align: center; 
+    margin: 30px;
+}
+
+.form-container {
+    background-color:white;
+    align-items: center;
+    height: 500px;
+    justify-content: center;    
+}
+
+.links {
+    background-color: rgb(37, 36, 36);    
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 300px 0 300px;
+}
+
+.links-list {
+    color: white;
+    list-style: none;
+    font-size: 20px;    
+}
+
+.links h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(243, 240, 240);
+    height: 40px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-family: 'Grape';
+    padding: 5px 50px 0 50px;
+    font-size: 25px;
+    font-weight: bolder;
 }
