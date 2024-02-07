@@ -4,76 +4,82 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Grape';
-    src: url('../assets/fonts/Grape_Nuts/GrapeNuts-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Fira';
-    src: url('../assets/fonts/Fira_Sans/FiraSans-Regular.ttf');
-}
-
-h1 {
-    color:white;
-    font-family: 'Grape';
-    font-weight: bold;
-}
-
-h2 {
-    color:white;
-    font-family: 'Grape';
-    font-weight: bold;
-}
-
-h3 {
-    color:black;
-    font-family: 'Fira';
-    font-weight: bold;
-}
-
-.bg-dark {
+.hero {
+    background-image: url('../assets/imges/mascotas.jpg');
+    background-size: cover;
+    min-height: 870px;
+    max-height: 1500px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 20px;   
 }
 
-.bg-dark-list {    
-    color: white;
+.hero h1 {
+    font-weight: bold;
+}
+
+.hero p {
     font-size: 20px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 3px 50px 5px 50px;
+
 }
 
-.bg-white {
-    padding: 0 25px 0 0;
+.btn-primary {
+    background-color: burlywood;
+    color:black;
+    font-size: 20px;
+    border: 2px solid transparent;
+    min-width: 150px;
 }
 
-.bg-white-list {    
+.btn-primary:hover{
+    border: 2px solid burlywood;
+    background-color: transparent;
     color: black;
-    font-size: 20px;
-    list-style: none;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    border: 2px solid burlywood;
+    background-color: transparent;
+    color: black;
+}
+
+.container-clase {
+    background-color: rgb(233, 233, 233);
+    min-height: 400px;
+    max-height: 1800px;
+}
+
+.container-clase h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+.clase {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    gap: 75%;
+    align-items: center;
+    gap: 30px;
+    margin: 0px;
 }
 
-nav {
-    background-color: rgb(223, 217, 217);
-    gap: 75%; 
+.clase img {
+    height: 300px;
+    width: 300px;
+    min-width: 5px;
+    border-radius: 10px;
 }
 
-.nav-item {
-    color: black;
-    padding: 0 100px 0 100px;
-}
-
-.nav-link {
-    color: black;
+.clase p {
+    font-size: 20px;
+    max-width: 700px;
+    text-align: center;  
 }
 
 .container-card {
@@ -82,152 +88,54 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center ;
-    gap: 75px;
-    margin: 30px;
+    gap: 50px;
+    margin: 20px;
 }
 
 .card {
     border-radius: 25px;
     width: 500px;
-    height: 170px;  
 }
 
-.nosotros {
-    background-color: rgb(145, 32, 32);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.nosotros img {
-    height: 450px;
-    border-radius: 10%;
-    margin: 30px;
-}
-
-.nosotros h2 {
-    color: black;
-    list-style: none;
-    font-size: 70px;
-    font-family: 'Grape';
-    text-align: center;
-    padding-left: 50px;
-}
-
-.nosotros p {
-    color: black;
-    list-style: none;
-    font-size: 35px;
-    font-family: 'Grape';
-    font-weight: bolder;
-    text-align: center; 
-    margin: 30px;
-}
-
-.equipo {
-    background-color: rgb(223, 217, 217);
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-}
-
-.equipo img {
-    height: 450px;
-    border-radius: 10%;
-    margin: 30px;
-}
-
-.equipo h2 {
-    color: black;
-    list-style: none;
-    font-size: 70px;
-    font-family: 'Grape';
-    text-align: center;
-    padding-left: 50px;
-}
-
-.equipo p {
-    color: black;
-    list-style: none;
-    font-size: 35px;
-    font-family: 'Grape';
-    font-weight: bolder;
-    text-align: center; 
-    margin: 30px;
-}
-
-.contact {
-    background-color: rgb(145, 32, 32);
+.map {
+    background-color: rgb(233, 233, 233);
     width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.contact iframe {
-    height: 400px;
-    width: 100%;
+.map iframe {
+    height: 300px;
+    width: 55%;
     margin: 30px;
 }
 
-.contact h2 {
+.map h2 {
     color: black;
     list-style: none;
     font-size: 70px;
     font-family: 'Grape';
     text-align: center;
-    padding-left: 50px;
 }
 
-.contact-list {
+.map-list {
     color: black;
     list-style: none;
-    font-size: 35px;
+    font-size: 20px;
     font-family: 'Grape';
     font-weight: bolder;
     text-align: center; 
-    margin: 30px;
-}
-
-.form-container {
-    background-color:white;
-    align-items: center;
-    height: 500px;
-    justify-content: center;    
-}
-
-.links {
-    background-color: rgb(37, 36, 36);    
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 300px 0 300px;
-}
-
-.links-list {
-    color: white;
-    list-style: none;
-    font-size: 20px;    
-}
-
-.links h2 {
-    color: white;
-    font-weight: normal;
-    font-size: 25px;
-}
-
-.links a {
-    color: white;
-    text-decoration: none;
+    padding-right: 50px;
+    min-height: 100px;
 }
 
 footer {
-    background-color: rgb(243, 240, 240);
-    height: 40px;
+    background-color:dimgray;
+    min-height: 40px;
+    max-height: 350px;    
 }
 
 .footer-list {
@@ -236,7 +144,22 @@ footer {
     justify-content: space-between;
     color: black;
     font-family: 'Grape';
-    padding: 5px 50px 0 50px;
-    font-size: 25px;
+    padding: 5px 10px 0px 10px;
+    font-size: 20px;
     font-weight: bolder;
+    flex-wrap: wrap;    
+}
+
+@media (max-width: 480px) {
+    .hero article {
+        width: 100%;
+    }
+    
+    .card {
+        width: 100%;
+    }
+    
+    .map {
+        width: 100%;
+    }
 }
