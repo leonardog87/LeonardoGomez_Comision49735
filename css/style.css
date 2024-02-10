@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;   
+    padding: 20px;
 }
 
 .hero h1 {
@@ -26,13 +26,13 @@
 
 .btn-primary {
     background-color: burlywood;
-    color:black;
+    color: black;
     font-size: 20px;
     border: 2px solid transparent;
     min-width: 150px;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     border: 2px solid burlywood;
     background-color: transparent;
     color: black;
@@ -79,7 +79,7 @@
 .clase p {
     font-size: 20px;
     max-width: 700px;
-    text-align: center;  
+    text-align: center;
 }
 
 .container-card {
@@ -87,7 +87,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     gap: 50px;
     margin: 20px;
 }
@@ -127,15 +127,15 @@
     font-size: 20px;
     font-family: 'Grape';
     font-weight: bolder;
-    text-align: center; 
+    text-align: center;
     padding-right: 50px;
     min-height: 100px;
 }
 
 footer {
-    background-color:dimgray;
+    background-color: dimgray;
     min-height: 40px;
-    max-height: 350px;    
+    max-height: 350px;
 }
 
 .footer-list {
@@ -147,7 +147,7 @@ footer {
     padding: 5px 10px 0px 10px;
     font-size: 20px;
     font-weight: bolder;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 
 /* galery */
@@ -253,16 +253,79 @@ footer {
     color: white;
 }
 
+
+
+/* servicios */
+
+.servicios {
+    background-color: rgb(133, 34, 34);
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'control control'
+        'vacunacion castracion';
+    gap: 10px;
+}
+
+.servicios-box {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    min-height: 250px;
+    max-height: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.s1 {
+    grid-area: control;
+}
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        position: relative;
+    }
+
+    h2 {
+        flex-direction: column;
+    }
+    
+
+.s2 {
+    grid-area: vacunacion;
+}
+
+.s3 {
+    grid-area: castracion;
+}
+
+@media (max-width: 1024px) {
+    .servicios-box {
+        background-color: blue;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios {
+        grid-template-areas:
+        'castracion castracion'
+        'vacunacion control';
+    }
+        .servicios-box {
+        display: flex;
+        flex-direction: column;
+        }
+}
+
 @media (max-width: 480px) {
-    .hero article {
-        width: 100%;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .box {
-        width: 100%;
-    }
+    .servicios {
+        display: flex;
+        flex-direction: column;
+    } 
 }
